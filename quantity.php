@@ -14,11 +14,12 @@ $result_quanity = $database->get_sql_data($sql_quantity);
 //var_dump($result_quanity);
 //
 //
-foreach ($result_quanity as $qty) {
-    //
-    //Get the values 
-    $quantity = array_values($qty)[0];
-    //
-    //Return all the values of an array.
-    echo $quantity."<br>";
-}
+echo json_encode($result_quanity);
+//foreach ($result_quanity as $qty) {
+//    //
+//    //Get the values 
+//    $quantity = array_values($qty)[0];
+//    //
+//    //Return all the values of an array.
+//    echo $quantity."<br>";
+//}

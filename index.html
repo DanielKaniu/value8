@@ -15,8 +15,11 @@
     <!--
         Main Javascript link. -->
     <script src="index.js"></script>
+    <!-- 
+    Quantity js link -->
+    <script src="fetch_quantity.js"></script>
   </head>
-  <body onload="products()">
+  <body onload="quantity()">
     <!--
         Business title. -->
     <div style="font-size: 30px; font-weight: bold; text-align: center">
@@ -31,7 +34,7 @@
             <tr class="table-dark">
               <th scope="col">#</th>
               <th scope="col">Product</th>
-              <th scope="col">Quantity</th>
+              <th scope="col">Quantity (Packets)</th>
               <th scope="col">Status</th>
               <th scope="col">Dispatch</th>
             </tr>
@@ -40,35 +43,35 @@
             <tr class="table-primary">
               <th scope="row">1</th>
               <td class="1">Milk</td>
-              <td id="1"></td>
+              <td class="qty">1</td>
               <td>In-stock</td>
               <td><button>sell</button></td>
             </tr>
             <tr class="table-warning">
               <th scope="row">2</th>
               <td class="2">Bread</td>
-              <td id="2">490 packets</td>
+              <td class="qty">490</td>
               <td>pending-restock</td>
               <td><button>sell</button></td>
             </tr>
             <tr class="table-active">
               <th scope="row">3</th>
-              <td class="3">Soda 300 ml</td>
-              <td id="3">510 crates</td>
+              <td class="3">baking flour</td>
+              <td class="qty">510</td>
               <td>In-stock</td>
               <td><button>sell</button></td>
             </tr>
             <tr class="table-primary">
-              <th scope="row">3</th>
+              <th scope="row">4</th>
               <td class="4">Unga 2kgs</td>
-              <td id="4">490 packets</td>
+              <td class="qty">490</td>
               <td>Pending-restock</td>
               <td><button>sell</button></td>
             </tr>
             <tr class="table-warning">
-              <th scope="row">3</th>
+              <th scope="row">5</th>
               <td class="5">Sugar 2kgs</td>
-              <td id="5">1000 packets</td>
+              <td class="qty">1000</td>
               <td>In-stock</td>
               <td><button>sell</button></td>
             </tr>

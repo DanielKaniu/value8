@@ -7,7 +7,7 @@ include_once '../library/v/code/schema.php';
 $database = new database("kefis");
 //
 //Query the database to get the products therein.
-$sql_product = "select store.product from store";
+$sql_product = "select store.product from store order by store.store asc";
 //
 //Get the products from the database.
 $result_product = $database->get_sql_data($sql_product);

@@ -19,6 +19,6 @@ async function quantity() {
     for(var i = 0; i<tds.length; i++){
         //
         //
-        tds[i].textContent = data;
+        tds[i].textContent = data[i].quantity;
     }
 }

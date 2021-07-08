@@ -11,18 +11,18 @@ async function unga() {
 //    const data = await resp.json();
 //    console.log(data);
     //
-    //
+    //Get the quantity td.
     const td_content = document.getElementById("unga");
     //
+    //Minus quantity by 1 upon sale.
     const qq= parseInt(td_content.textContent) - 1;
-    //
-    //
     td_content.textContent =qq;
     //
-    //
+    //Get the status td.
     const td_status = document.querySelector("#unga_sts");
     //
-    //
+    //Condition that sets the status of a product to enough or pending
+    //depending on the quantity.
     td_status.textContent=qq< 500? "pending restock":"Enough stock";
 }
 

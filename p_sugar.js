@@ -14,16 +14,15 @@ async function sugar() {
     //
     const td_content = document.getElementById("sugar");
     //
-    //
+    //Minus quantity by 1 upon sale.
     const qq= parseInt(td_content.textContent) - 1;
-    //
-    //
     td_content.textContent =qq;
     //
-    //
+    //Get the status td.
     const td_status = document.querySelector("#sugar_sts");
     //
-    //
+    //Condition that sets the status of a product to enough or pending
+    //depending on the quantity.
     td_status.textContent=qq< 500? "pending restock":"Enough stock";
 }
 

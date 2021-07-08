@@ -11,9 +11,19 @@ async function milk() {
 //    const data = await resp.json();
 //    console.log(data);
     //
-    //
+    //Get the td quantity.
     const td_content = document.getElementById("milk");
     //
-    td_content.textContent = parseInt(td_content.textContent) - 1;
+    //
+    const qq= parseInt(td_content.textContent) - 1;
+    //
+    //
+    td_content.textContent =qq;
+    //
+    //
+    const td_status = document.querySelector("#milk_sts");
+    //
+    //
+    td_status.textContent=qq< 500? "pending restock":"Enough stock";
 }
 

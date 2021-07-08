@@ -15,10 +15,18 @@ async function quantity() {
     const tds = document.querySelectorAll(".qty");
     //console.log(td1);
     //
+    // 
+    //Get the statuses of the various tds
+    const tds_sts = document.querySelectorAll(".sts");
+    //
     //
     for(var i = 0; i<tds.length; i++){
         //
         //Then for one td, append a quantity.
         tds[i].textContent = data[i].quantity;
+        //
+        //
+        tds_sts[i].textContent=
+            parseInt(data[i].quantity)< 500? "pending restock":"Enough stock";
     }
 }

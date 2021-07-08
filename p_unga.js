@@ -14,6 +14,15 @@ async function unga() {
     //
     const td_content = document.getElementById("unga");
     //
-    td_content.textContent = parseInt(td_content.textContent) - 1;
+    const qq= parseInt(td_content.textContent) - 1;
+    //
+    //
+    td_content.textContent =qq;
+    //
+    //
+    const td_status = document.querySelector("#unga_sts");
+    //
+    //
+    td_status.textContent=qq< 500? "pending restock":"Enough stock";
 }
 

@@ -12,4 +12,4 @@ $sql_status = "select store.quantity from store";
 //Get the results back from the database.
 $result_status = $database->get_sql_data($sql_status);
 //
-//Loop through the 
+//Check the quantity status

@@ -18,6 +18,21 @@
     <!--
     Product js link -->
     <script src="fetch_product.js"></script>
+    <!--
+    Milk js link -->
+    <script src="p_milk.js"></script>
+    <!--
+    Soda js link -->
+    <script src="p_soda.js"></script>
+    <!--
+    Bread js link -->
+    <script src="p_bread.js"></script>
+    <!--
+    Unga js link -->
+    <script src="p_unga.js"></script>
+    <!--
+    Sugar js link -->
+    <script src="p_sugar.js"></script>
   </head>
   <body onload="quantity(), product()">
     <!--
@@ -43,37 +58,37 @@
             <tr class="table-primary">
               <th scope="row">1</th>
               <td class="prdct"></td>
-              <td class="qty">1</td>
+              <td class="qty" id="milk"></td>
               <td>In-stock</td>
-              <td><button>sell</button></td>
+              <td><button onclick="milk()">sell</button></td>
             </tr>
             <tr class="table-warning">
               <th scope="row">2</th>
               <td class="prdct"></td>
-              <td class="qty">490</td>
+              <td class="qty" id="soda"></td>
               <td>pending-restock</td>
-              <td><button>sell</button></td>
+              <td><button onclick="soda()">sell</button></td>
             </tr>
             <tr class="table-active">
               <th scope="row">3</th>
               <td class="prdct"></td>
-              <td class="qty">510</td>
+              <td class="qty" id="bread"></td>
               <td>In-stock</td>
-              <td><button>sell</button></td>
+              <td><button onclick="bread()">sell</button></td>
             </tr>
             <tr class="table-primary">
               <th scope="row">4</th>
               <td class="prdct"></td>
-              <td class="qty">490</td>
+              <td class="qty" id="unga"></td>
               <td>Pending-restock</td>
-              <td><button>sell</button></td>
+              <td><button onclick="unga()">sell</button></td>
             </tr>
             <tr class="table-warning">
               <th scope="row">5</th>
               <td class="prdct"></td>
-              <td class="qty">1000</td>
+              <td class="qty" id="sugar"></td>
               <td>In-stock</td>
-              <td><button>sell</button></td>
+              <td><button onclick="sugar()">sell</button></td>
             </tr>
           </tbody>
         </table>

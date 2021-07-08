@@ -18,7 +18,7 @@ async function product() {
     //
     for(var i = 0; i<tds.length; i++){
         //
-        //Then for one td, append a quantity.
+        //Then for one td, append a product.
         tds[i].textContent = data[i].product;
     }
 }

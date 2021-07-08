@@ -13,6 +13,9 @@
       crossorigin="anonymous"
     />
     <!-- 
+    Index js link -->
+    <script src="index.js"></script>
+    <!-- 
     Quantity js link -->
     <script src="fetch_quantity.js"></script>
     <!--
@@ -34,7 +37,7 @@
     Sugar js link -->
     <script src="p_sugar.js"></script>
   </head>
-  <body onload="quantity(), product()">
+  <body onload="quantity(), product(), status()">
     <!--
         Business title. -->
     <div style="font-size: 30px; font-weight: bold; text-align: center">
@@ -59,35 +62,35 @@
               <th scope="row">1</th>
               <td class="prdct"></td>
               <td class="qty" id="milk"></td>
-              <td>In-stock</td>
+              <td class="sts"></td>
               <td><button onclick="milk()">sell</button></td>
             </tr>
             <tr class="table-warning">
               <th scope="row">2</th>
               <td class="prdct"></td>
               <td class="qty" id="soda"></td>
-              <td>pending-restock</td>
+              <td class="sts"></td>
               <td><button onclick="soda()">sell</button></td>
             </tr>
             <tr class="table-active">
               <th scope="row">3</th>
               <td class="prdct"></td>
               <td class="qty" id="bread"></td>
-              <td>In-stock</td>
+              <td class="sts"></td>
               <td><button onclick="bread()">sell</button></td>
             </tr>
             <tr class="table-primary">
               <th scope="row">4</th>
               <td class="prdct"></td>
               <td class="qty" id="unga"></td>
-              <td>Pending-restock</td>
+              <td  class="sts"></td>
               <td><button onclick="unga()">sell</button></td>
             </tr>
             <tr class="table-warning">
               <th scope="row">5</th>
               <td class="prdct"></td>
               <td class="qty" id="sugar"></td>
-              <td>In-stock</td>
+              <td class="sts"></td>
               <td><button onclick="sugar()">sell</button></td>
             </tr>
           </tbody>
